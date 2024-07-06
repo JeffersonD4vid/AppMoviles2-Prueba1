@@ -4,9 +4,10 @@ import { StyleSheet, Text, View } from 'react-native';
 import WelcomeScreen from './screens/WelcomeScreen';
 import RegistrosScreen from './screens/RegistrosScreen';
 import MostrarRegistro from './screens/MostrarRegistro';
+import MostrarApi from './screens/MostrarApi';
 
 export default function App() {
   return (
-    <MostrarRegistro/>
+    <WelcomeScreen/>
   );
 }

@@ -1,7 +1,7 @@
 import { ImageBackground, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
-export default function WelcomeScreen() {
+export default function WelcomeScreen( {navigation}: any) {
   return (
     <ImageBackground 
     source={{uri:"https://img.freepik.com/free-photo/off-road-car-wilderness_23-2151483062.jpg?t=st=1720138801~exp=1720142401~hmac=5d9c4b2d8c59d039853f37feb8d94cf4028fe835c5ce2394c3ba8c573e467300&w=360"}}
@@ -12,7 +12,7 @@ export default function WelcomeScreen() {
   
 
       <TouchableOpacity style={styles.button} 
-                        //onPress={()=> navigation.navigate('BottonTab')}
+                        onPress={()=> navigation.navigate('BottomTab')}
                         >
         <Text style={styles.buttonText}>Ingresar</Text>
       </TouchableOpacity>
