@@ -23,7 +23,7 @@ export default function InformacionApi(props: any) {
   }
 
   function informacion( juegos: Juegos ){
-    Alert.alert("Información", `${juegos.name}\n${juegos.description}`);
+    Alert.alert("Información", `${juegos.name}\n${props.data.metadata.temporada}`);
   };
 
   return (
@@ -31,8 +31,8 @@ export default function InformacionApi(props: any) {
       <TouchableOpacity style={styles.contenData} 
         onPress={()=>informacion(props.data)}
         >
-        <Text style={{color:'#000', fontSize:20, fontWeight:'600'}}>{props.data.name}</Text>
-        <Image style={styles.img} source={{ uri: props.data.image }} />
+        <Text style={{color:'#000', fontSize:20, fontWeight:'600'}}>{props.data.titulo}</Text>
+        <Image style={styles.img} source={{ uri: props.data.info.imagen }} />
       </TouchableOpacity>
       <StatusBar />
     </View>

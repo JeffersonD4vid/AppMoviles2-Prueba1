@@ -22,8 +22,8 @@ const Stack = createStackNavigator();
 
 function MyStack() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Welcome" component={WelcomeScreen} />
+    <Stack.Navigator >
+      <Stack.Screen name="Welcome" component={WelcomeScreen}/>
       <Stack.Screen name='BottonTab' component={MyTabs} />
     </Stack.Navigator>
   );

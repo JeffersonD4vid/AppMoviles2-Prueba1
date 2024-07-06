@@ -7,7 +7,7 @@ export default function MostrarApi() {
 
 
   const [data, setdata] = useState([])
-  const API_MOVIE= "https://jritsqmet.github.io/web-api/crash.json";
+  const API_MOVIE= "https://jritsqmet.github.io/web-api/series.json";
 
   useEffect(() => {
     fetch (API_MOVIE)
@@ -23,7 +23,7 @@ export default function MostrarApi() {
     <View >
       <Text style={{color:'#000', fontSize:45, fontWeight:700, textAlign:'center', backgroundColor:'#024'}}>Peliculas</Text>
         <FlatList 
-          data={data}
+          data={data.series}
           renderItem={ ( { item }) =>
           <InformacionApi data={item} />
           }

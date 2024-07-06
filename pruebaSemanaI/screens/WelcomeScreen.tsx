@@ -12,7 +12,7 @@ export default function WelcomeScreen( {navigation}: any) {
   
 
       <TouchableOpacity style={styles.button} 
-                        onPress={()=> navigation.navigate('BottomTab')}
+                        onPress={()=> navigation.navigate('BottonTab')}
                         >
         <Text style={styles.buttonText}>Ingresar</Text>
       </TouchableOpacity>
